@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Habar</string>
+    <string name="reading_list">Reading List</string>
+    <string name="search">Search</string>
+
+    <string name="today">Today</string>
+    <string name="business">Business</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="health">Health</string>
+    <string name="science">Science</string>
+    <string name="sports">Sports</string>
+    <string name="technology">Technology</string>
+    <string name="bookmark">Bookmark</string>
+
+</resources>

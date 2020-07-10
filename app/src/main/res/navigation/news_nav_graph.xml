@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/articleFragment">
+
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="id.aria.habar.ui.BaseFragment"
+        android:label="ArticleFragment">
+        <action
+            android:id="@+id/action_articleFragment_to_detailArticleFragment2"
+            app:destination="@id/detailArticleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="id.aria.habar.ui.search.SearchFragment"
+        android:label="SearchFragment">
+        <action
+            android:id="@+id/action_searchFragment_to_detailArticleFragment"
+            app:destination="@id/detailArticleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="id.aria.habar.ui.bookmark.BookmarkFragment"
+        android:label="BookmarkFragment">
+        <action
+            android:id="@+id/action_bookmarkFragment_to_detailArticleFragment"
+            app:destination="@id/detailArticleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailArticleFragment"
+        android:name="id.aria.habar.ui.detail.DetailArticleFragment"
+        android:label="DetailArticleFragment" >
+        <argument
+            android:name="article"
+            app:argType="id.aria.habar.domain.Article" />
+    </fragment>
+</navigation>
